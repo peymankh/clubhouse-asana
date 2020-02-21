@@ -24,7 +24,7 @@ run()
 // ----------------------------------------------------------------------------
 async function run () {
   // Initialize Asana and Clubhouse libraries
-  asana.init(commander.asanaToken)
+  asana.init(commander.asanaToken, commander.sourceDepartment)
   clubhouse.init(commander.clubhouseToken)
 
   // Fetch all Asana Tasks for this project import
@@ -48,6 +48,8 @@ async function run () {
   for (const story of stories) {
     delete story.asanaId
     story.project_id = commander.to
+
+    spinner.text = `Creating story ${story.name} in your Clubhouse project`
     clubhouse.createStory(story)
   }
 

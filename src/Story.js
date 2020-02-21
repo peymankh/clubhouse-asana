@@ -20,6 +20,10 @@ module.exports = new Archetype({
     $required: true,
     $default: ''
   },
+  estimate: {
+    $type: 'number',
+    $required: false
+  },  
   tasks: {
     $type: [Object],
     $required: true,

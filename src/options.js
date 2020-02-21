@@ -10,6 +10,10 @@ module.exports = Object.freeze([
     description: 'Destination Clubhouse project to export to'
   },
   {
+    flag: '-d, --sourceDepartment <sourceDepartment>',
+    description: 'Custom Source Department'
+  },
+  {
     flag: '--asana-token <asanaToken>',
     description: 'Personal token for accessing Asana API'
   },

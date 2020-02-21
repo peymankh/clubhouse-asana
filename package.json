@@ -25,7 +25,7 @@
   "dependencies": {
     "archetype": "^0.9.0",
     "asana": "^0.16.6",
-    "clubhouse-lib": "^0.5.0",
+    "clubhouse-lib": "^0.10.0",
     "commander": "^2.20.0",
     "ora": "^3.4.0",
     "standard": "^12.0.1"
